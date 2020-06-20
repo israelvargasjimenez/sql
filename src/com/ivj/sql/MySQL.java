@@ -43,7 +43,7 @@ public  class MySQL extends Abstract_SQL{
 	}
 
 	
-    public void select(String fields, String tableName, String condition ) {
+    public void select(String fields, String tableName, String conditionalFieldName, String condition ) {
     	//SQL sentence
     	String sql;
     	
@@ -52,7 +52,7 @@ public  class MySQL extends Abstract_SQL{
                     " "+tableName+";";
     	}else {
     		sql = QUERY.SELECT.name()+" "+fields+" "+"FROM"+
-                    " "+tableName+" "+"WHERE"+" "+condition+";";
+                    " "+tableName+" "+"WHERE"+" "+conditionalFieldName+"="+condition+";";
     	} 
     	super.select(sql);
     }

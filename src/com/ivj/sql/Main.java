@@ -10,7 +10,7 @@ public class Main {
 		//mysql.select("CODIGO_CLIENTE, FECHA_PEDIDO", "pedidos", null);
 		//mysql.select("*", "productos", null);
 		
-		mysql.select("*", "productos", "CONFECCION");
+		mysql.select("*", "productos", "SECCION","'CONFECCIÓN'");
 		
 		mysql.printSelectResults();
 
