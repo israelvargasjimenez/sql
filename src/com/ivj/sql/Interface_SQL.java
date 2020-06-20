@@ -43,7 +43,7 @@ public interface Interface_SQL {
 	/**
 	 * Method that execute query using sql sentence passed like argument
 	 */
-	public abstract void executeQuery (String sql);
+	public abstract void select (String sql);
 	
 	
 	/**
