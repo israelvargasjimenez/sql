@@ -8,9 +8,11 @@ public class Main {
 		MySQL mysql = new MySQL("192.168.1.5", "3306", "pildoras", "elisa", "Sismed08");		
 		
 		//mysql.select("CODIGO_CLIENTE, FECHA_PEDIDO", "pedidos", null);
-		//mysql.select("*", "productos", null);
+		//mysql.select("*", "productos", null, null);
 		
-		mysql.select("*", "productos", "SECCION","'CONFECCIÓN'");
+		mysql.select("PAIS_ORIGEN", "productos", null, null);
+		
+		//mysql.select("*", "productos", "SECCION","'CONFECCIÓN'");
 		
 		mysql.printSelectResults();
 

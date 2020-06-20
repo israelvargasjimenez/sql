@@ -47,7 +47,7 @@ public  class MySQL extends Abstract_SQL{
     	//SQL sentence
     	String sql;
     	
-    	if (condition == null) {
+    	if (condition == null || conditionalFieldName== null ) {
     		sql = QUERY.SELECT.name()+" "+fields+" "+"FROM"+
                     " "+tableName+";";
     	}else {
