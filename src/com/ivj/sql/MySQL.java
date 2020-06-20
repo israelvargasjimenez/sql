@@ -38,7 +38,7 @@ public  class MySQL extends Abstract_SQL{
 
 
 	public void connect() {
-		String url = "jdbc:mysql//"+dbDestination+":"+port+"/"+dbName;
+		String url = "jdbc:mysql://"+dbDestination+":"+port+"/"+dbName;
 		super.connect(url, user, password);
 	}
 
