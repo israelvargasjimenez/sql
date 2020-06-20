@@ -3,7 +3,7 @@ package com.ivj.sql;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		MySQL mysql = new MySQL("192.168.1.5", "3306", "pildoras", "elisa", "Sismed08");
 
 	}
 
