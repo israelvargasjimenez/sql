@@ -49,10 +49,10 @@ public  class MySQL extends Abstract_SQL{
     	
     	if (condition == null) {
     		sql = QUERY.SELECT.name()+" "+fields+" "+"FROM"+
-                    " "+tableName;
+                    " "+tableName+";";
     	}else {
     		sql = QUERY.SELECT.name()+" "+fields+" "+"FROM"+
-                    " "+tableName+" "+"WHERE"+" "+condition;
+                    " "+tableName+" "+"WHERE"+" "+condition+";";
     	} 
     	super.select(sql);
     }
