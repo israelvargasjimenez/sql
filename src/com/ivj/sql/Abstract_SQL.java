@@ -70,7 +70,7 @@ public abstract class Abstract_SQL implements Interface_SQL {
 			} else {
 				this.myConnection = DriverManager.getConnection(url, user, password);
 			}
-			// Se guarda la meta información de la base de datos de la conexión
+			// Se guarda la meta informaciï¿½n de la base de datos de la conexiï¿½n
 			this.metaDataDataBase = myConnection.getMetaData();
 			this.createStatement();
 		} catch (SQLException e) {
@@ -139,15 +139,15 @@ public abstract class Abstract_SQL implements Interface_SQL {
 	public void printSelectResults() {
 		// Selected Column names are printout
 		try {			
-			for (int i = 1; i < resultSetColums; i++) {
-				System.out.print(metaDataResultSet.getColumnLabel(i)+ "\t " );
+			for (int i = 1; i <= resultSetColums; i++) {
+				System.out.print("-"+metaDataResultSet.getColumnLabel(i)+ "-\t " );
 			}
-			System.out.println(metaDataResultSet.getColumnLabel(resultSetColums));
+			System.out.println();
 			
 			//Result row are printed				
 			while (myResutls.next()) {
 				for ( int i = 1; i <= resultSetColums; i++ ) {
-					System.out.print(myResutls.getString(i)+ "\t ");
+					System.out.print("-"+myResutls.getString(i)+ "-\t ");
 				}
 				System.out.println();
 			}

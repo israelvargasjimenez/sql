@@ -7,12 +7,12 @@ public class Main {
 	public static void main(String[] args) {
 		MySQL mysql = new MySQL("192.168.1.5", "3306", "pildoras", "elisa", "Sismed08");		
 		
-		mysql.select("CODIGO_CLIENTE, FECHA_PEDIDO", "pedidos", null,null);
+		mysql.select("*", "pedidos", null,null);
 		//mysql.select("*", "productos", null, null);
 		
 		//mysql.select("PAIS_ORIGEN", "productos", null, null);
 		
-		//mysql.select("*", "productos", "SECCION","'CONFECCIÓN'");
+		//mysql.select("*", "productos", "SECCION","'CONFECCIï¿½N'");
 		
 		mysql.printSelectResults();
 
