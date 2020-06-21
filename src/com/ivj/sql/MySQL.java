@@ -2,6 +2,8 @@ package com.ivj.sql;
 
 import java.sql.Connection;
 
+import com.mysql.jdbc.PreparedStatement;
+
 public  class MySQL extends Abstract_SQL{
 	String dbDestination = null;
 	String port = null;
@@ -56,10 +58,4 @@ public  class MySQL extends Abstract_SQL{
     	} 
     	super.select(sql);
     }
-	
-
-	
-	
-	
-	
 }
